@@ -1,0 +1,141 @@
+/*	CSS Document for the Page Capture widget.
+	Originally developed by Paulo Avila (apaulodesign.com) */
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hide;
+	background-color: transparent;
+}
+
+
+/* Front Styles
+--------------------------------------------------------- */
+#front {
+	position: absolute;
+	width: 332px;
+	height: 115px;
+	background: url(Images/front.png) no-repeat bottom;
+}
+#infoButton {
+	position: absolute;
+	bottom: 43px;
+	right: 25px;
+	cursor: default;
+}
+#start {
+	position: absolute;
+	width: 74px;
+	height: 74px;
+	top: 22px;
+	left: 23px;
+	-webkit-border-radius: 37px;
+}
+#uri {
+	position: absolute;
+	top: 39px;
+	left: 117px;
+	width: 192px;
+	border: none;
+	font: bold 9pt "Lucida Grande";
+	overflow: hidden;
+	outline: none;
+	background-color: transparent;
+}
+#info {
+	position: absolute;
+	top: 66px;
+	left: 116px;
+	width: 199px;
+	height: 15px;
+	overflow: hidden;
+}
+/* the order of the following 3 style definiations matters! */
+#infoImage.mouseover { background-position-x: -15px; }
+#infoImage:active { background-position-x: -30px; }
+#infoImage.mouseout { background-position-x: 0; }
+#infoImage {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: url(Images/spinner.png) no-repeat top left;
+}
+#infoText {
+	padding-left: 4px;
+	color: #2b2b2b;
+	font: 7pt/12pt "Lucida Grande";
+	overflow: hidden;
+}
+#infoText filename {
+/*	font-style: italic;
+	color: #141414;
+	text-decoration: underline;*/
+}
+
+
+/* Back Styles
+--------------------------------------------------------- */
+#back {
+	position: absolute;
+	width: 332px;
+	height: 115px;
+	display: none;
+	background: url(Images/back.png) no-repeat bottom;
+}
+#logo {
+	position: absolute;
+	top: 47px;
+	left: 41px;
+	cursor: pointer;
+}
+#options {
+	position: absolute;
+	top: 22px;
+	left: 245px;
+	text-align: center;
+/*
+	top: 22px;
+	left: 253px;
+	width: 50px;
+*/
+	font: bold 8pt "Helvetica Neue";
+	color: #eee;
+}
+/*
+#width {
+	margin: 4px 2px 0 0;
+	width: 25px;
+	height: 9px;
+	font-size: 7pt;
+	text-align: center;
+}
+*/
+#width {
+	margin-top: 2px;
+    font-size: 10px;
+}
+#version {
+	position: absolute;
+	top: 89px;
+	left: 257px;
+	width: 28px;
+	height: 11px;
+	overflow: hidden;
+	font: 6.5pt/8pt Verdana;
+	color: gray;
+	cursor: pointer;
+}
+#version.idle {
+	text-align: center;
+	background: none;
+}
+#version.link {
+	text-align: left;
+	background: url(Images/arrow.png) no-repeat 1px right;
+}
+#doneButton {
+	position: absolute;
+	bottom: 29px;
+	right: 35px;
+	cursor: default;
+}
